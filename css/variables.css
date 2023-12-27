@@ -1,0 +1,19 @@
+:root {
+    /* Colors */
+    --primary-background-color: #f7f7f7;
+    --secundary-background-color: #fff;
+    --primary-text-color: #000;
+    --secundary-text-color: #c6c6c6;
+    --primary-color: #ee2211;
+
+    /* Fonts */
+    --primary-font: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+}

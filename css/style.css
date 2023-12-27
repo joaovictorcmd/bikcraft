@@ -1,0 +1,155 @@
+@import url(variables.css);
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  display: block;
+  margin: 4rem auto 1rem auto;
+}
+
+.header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  place-content: center;
+  margin: 2rem auto;
+}
+
+.menu__item {
+  display: block;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--secundary-background-color);
+  color: inherit;
+  font-weight: 700;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1000px;
+
+  display: grid;
+  grid-template: "product" "advantages";
+}
+
+.main__product {
+  grid-area: product;
+  position: relative;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  gap: 1rem 1.25rem;
+  place-items: end;
+  background-color: var(--secundary-background-color);
+}
+
+.product__detail {
+  display: inline-block;
+  width: 3.75rem;
+  height: 0.25rem;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 1.875rem;
+  left: 48%;
+}
+
+.product__title {
+  grid-area: 1;
+  place-self: end;
+
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.product__description {
+  grid-area: 2;
+  place-self: center end;
+
+  text-align: end;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.product__button {
+  grid-area: 3;
+  place-self: start end;
+
+  display: block;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--primary-background-color);
+  border-radius: 7px;
+}
+
+.product__img {
+  width: 100%;
+  grid-area: 1 / 2 / 4 / 2;
+}
+
+.main__advantages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 1.25rem;
+}
+
+.advantages__title {
+  place-self: center;
+
+  font-weight: bold;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: end;
+  color: var(--secundary-text-color);
+}
+
+.advantages__list {
+  display: grid;
+  gap: 1rem;
+
+  padding: 4rem;
+  place-self: center;
+  background-color: var(--secundary-background-color);
+}
+
+.list__item {
+  display: grid;
+  grid-template: 1fr 2fr / auto 2fr;
+  gap: 0.5rem 1rem;
+}
+
+.item__img {
+  grid-area: 1 / 1 / 1 / 1;
+
+  display: block;
+  height: 100%;
+}
+
+.item__title {
+  grid-area: 1 / 2 / 1 / 2;
+
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.item__description {
+  grid-area: 2 / 2 / 3 / 3;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.footer {
+  margin-top: 3rem;
+}
+
+.footer__text {
+  font-size: 1.25rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--secundary-background-color);
+}
