@@ -26,6 +26,12 @@
   background-color: var(--secundary-background-color);
   color: inherit;
   font-weight: 700;
+  border: 2px solid transparent;
+}
+
+.menu__item:hover {
+  border-color: var(--primary-color);
+  transition: 10ms;
 }
 
 .main {
@@ -46,14 +52,17 @@
   background-color: var(--secundary-background-color);
 }
 
-.product__detail {
-  display: inline-block;
+.main__product::before {
+  content: "";
   width: 3.75rem;
   height: 0.25rem;
-  background-color: var(--primary-color);
+  background: var(--primary-color);
+
   position: absolute;
-  top: 1.875rem;
-  left: 48%;
+  top: 1.5rem;
+  right: 46%;
+  
+  
 }
 
 .product__title {
@@ -86,6 +95,12 @@
   border-radius: 7px;
 }
 
+.product__button:hover {
+  background-color: var(--secundary-color);
+  color: var(--secundary-background-color);
+  transition: 10ms;
+}
+
 .product__img {
   width: 100%;
   grid-area: 1 / 2 / 4 / 2;
@@ -100,27 +115,41 @@
 
 .advantages__title {
   place-self: center;
-
   font-weight: bold;
   font-size: 4rem;
   text-transform: uppercase;
   text-align: end;
   color: var(--secundary-text-color);
+  padding: 2.5rem;
+  background: url(../img/onda.svg);
 }
 
 .advantages__list {
   display: grid;
-  gap: 1rem;
 
-  padding: 4rem;
+  padding: 2.5rem;
   place-self: center;
-  background-color: var(--secundary-background-color);
+  background: var(--secundary-background-color);
+}
+
+.advantages__list:nth-child(odd){
+  background-color: red;
 }
 
 .list__item {
+  padding: 1.5rem;
   display: grid;
   grid-template: 1fr 2fr / auto 2fr;
+  align-items: center;
   gap: 0.5rem 1rem;
+}
+
+.list__item:nth-child(odd) {
+  background-color: var(--primary-background-color);
+}
+
+.list__item:hover {
+  border-left: 4px solid var(--primary-color);
 }
 
 .item__img {
@@ -141,6 +170,7 @@
   grid-area: 2 / 2 / 3 / 3;
   font-size: 1.25rem;
   font-weight: 500;
+  line-height: 2rem;
 }
 
 .footer {
