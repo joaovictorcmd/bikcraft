@@ -50,6 +50,7 @@
   gap: 1rem 1.25rem;
   place-items: end;
   background-color: var(--secundary-background-color);
+  
 }
 
 .main__product::before {
@@ -61,7 +62,6 @@
   position: absolute;
   top: 1.5rem;
   right: 46%;
-  
   
 }
 
@@ -102,7 +102,7 @@
 }
 
 .product__img {
-  width: 100%;
+  max-width: 100%;
   grid-area: 1 / 2 / 4 / 2;
 }
 
@@ -115,7 +115,7 @@
 
 .advantages__title {
   place-self: center;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 4rem;
   text-transform: uppercase;
   text-align: end;

@@ -1,0 +1,19 @@
+.font-1-s-b {
+  font: 700 1rem/1 Arial, Helvetica, sans-serif;
+}
+
+.font-1-m {
+  font: 400 1.25rem Arial, Helvetica, sans-serif;
+}
+
+.font-1-m-b {
+  font: 700 1.25rem Arial, Helvetica, sans-serif;
+}
+
+.font-1-l-b {
+  font: 700 2rem Arial, Helvetica, sans-serif;
+}
+
+.font-1-xl-b {
+  font: 700 4rem Arial, Helvetica, sans-serif;
+}
