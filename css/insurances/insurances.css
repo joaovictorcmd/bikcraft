@@ -1,0 +1,73 @@
+.insurances-bg {
+  background-color: var(--color-11);
+}
+
+.insurances {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.insurances h2 {
+  grid-column: 1/-1;
+}
+
+.card {
+  border-radius: 5px;
+  background-color: var(--color-12);
+  padding: 32px 32px 32px 60px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__header div {
+  display: flex;
+  flex-direction: column;
+}
+.card__header span {
+  display: block;
+  text-align: end;
+}
+.card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card__btn {
+  place-self: start;
+}
+
+.card__list li::before {
+  content: "";
+  position: absolute;
+  left: -21px;
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url(../../img/icones/lista.svg);
+}
+
+.card__list li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.card:last-child h3 {
+  color: var(--color-p1);
+}
+
+@media (max-width: 800px) {
+  .insurances {
+    grid-template-columns: 1fr;
+  }
+}
